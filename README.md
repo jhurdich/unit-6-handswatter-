@@ -5,3 +5,5 @@ A live classroom game using Cloudflare Workers and Durable Objects. The teacher 
 The vocabulary follows the slide categories. The picture-based slides use text labels from the earlier Unit 6 vocabulary list; a teacher should check these against the original slides before class.
 
 Deploy with `npx wrangler deploy`. Existing Durable Object class and binding names are retained; fresh games use a new storage key so old sessions do not affect new games.
+
+The teacher can reset the room for a new group, which clears scores and disconnects the previous students while keeping the room code and projector. End room disconnects everyone and closes the room.
